@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE command SYSTEM "command.dtd">
+<command date="10/28/2020">
+    <client>
+        <firstName>Titoss</firstName>
+        <lastName>Larhzal</lastName>
+        <adresse>
+            <street>EL Massira</street>
+            <appartement>120</appartement>
+            <district>Hay Riad</district>
+            <city>Meknes</city>
+            <country>Morocco</country>
+        </adresse>
+        <phoneNumber>+212682251070</phoneNumber>
+    </client>
+    <commandLine>
+        <product id="GN20">
+            <title>Galaxy Note 20+</title>
+            <category>Smartphone</category>
+        </product>
+        <quantity product="GN20" value="1"/>
+    </commandLine>
+    <commandLine>
+        <product id="GS20">
+            <title>Galaxy S20</title>
+            <category>Smartphone</category>
+        </product>
+        <quantity product="GS20" value="1"/>
+    </commandLine>
+</command>

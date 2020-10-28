@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT command (client, (commandLine)+)>
+<!ATTLIST command date CDATA #REQUIRED >
+<!ELEMENT client (firstName, lastName, adresse, phoneNumber) >
+<!ELEMENT firstName (#PCDATA) >
+<!ELEMENT lastName (#PCDATA) >
+<!ELEMENT phoneNumber (#PCDATA) >
+
+<!ELEMENT adresse (street, appartement, district, city, country) >
+<!ELEMENT street (#PCDATA) >
+<!ELEMENT appartement (#PCDATA) >
+<!ELEMENT district (#PCDATA) >
+<!ELEMENT city (#PCDATA) >
+<!ELEMENT country (#PCDATA) >
+
+<!ELEMENT commandLine (product, quantity)+>
+<!ELEMENT product (title, category) >
+<!ATTLIST product id ID #REQUIRED>
+<!ELEMENT title (#PCDATA) >
+<!ELEMENT category (#PCDATA) >
+
+<!ELEMENT quantity EMPTY >
+<!ATTLIST quantity product IDREF #REQUIRED>
+<!ATTLIST quantity value CDATA #REQUIRED>
